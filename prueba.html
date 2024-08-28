@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba - Sproutloud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --text-color: #000000;
+        --blue: #005499;
+        --border: #dcdedc;
+        --background: #ffffff;
+        --yellow: #fcd426;
+        --container: #f2f2f2;
+      }
+      body {
+        margin: 0;
+        background-color: var(--container);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container .content-box {
+        padding: 100px;
+        width: 1390px;
+        height: 627px;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .container .content-box .content-box-info {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container .content-box .content-box-info h1 {
+        font-size: 50px;
+        color: var(--text-color);
+        font-family: 'Lato', sans-serif;
+        font-weight: bolder;
+      }
+
+      .container .content-box .content-box-info h1 .blue-word {
+        color: var(--blue);
+      }
+      .container .content-box .content-box-info p {
+        font-size: 30px;
+        color: var(--text-color);
+        font-family: 'Lato', sans-serif;
+      }
+
+      .container .content-box .content-box-quotes {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .container .content-box .content-box-quotes .yellow-block {
+        width: 616px;
+        height: 83px;
+        background-color: var(--yellow);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(1.5rem);
+      }
+
+      .container .content-box .content-box-quotes .quotes-container {
+        display: flex;
+        flex-direction: row;
+        width: 568px;
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 1;
+      }
+
+      .container .content-box .content-box-quotes .quotes-container .quote {
+        height: 330px;
+        width: 273px;
+        background-color: var(--background);
+        border: 5px solid var(--border);
+        border-radius: 5px;
+        padding-inline: 35px;
+        box-shadow: 0px 4px 5px 0px #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .quote-key {
+        font-size: 120px;
+        color: var(--blue);
+        font-family: 'Junge';
+      }
+
+      .quote-text {
+        font-size: 25px;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        margin: 0 0 10px 0px;
+        font-family: 'Lato', sans-serif;
+      }
+
+      .line {
+        width: 50px;
+        height: 4px;
+        background-color: var(--blue);
+        border-radius: 2px;
+        margin: 10px 0;
+      }
+
+      .quote-author {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+      }
+
+      .quote-text-container {
+        transform: translateY(-4rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-box">
+        <div class="content-box-info">
+          <h1>
+            Delivering the <span class="blue-word">best results</span> and
+            support for our partners.
+          </h1>
+          <p>
+            This is not our first rodeo, we aim to optimize your campaigns to
+            drive the best possible return on your investment by looking at not
+            only the data but listening to clients.
+          </p>
+        </div>
+        <div class="content-box-quotes">
+          <div class="yellow-block"></div>
+          <div class="quotes-container">
+            <div class="quote">
+              <span class="quote-key">“</span>
+              <div class="quote-text-container">
+                <p class="quote-text">
+                  Set it and forget it, plug and play. It’s like a 24/7 salesman
+                  working online for you.
+                </p>
+                <span class="line"></span>
+                <p class="quote-author">Delta Power Equipment</p>
+              </div>
+            </div>
+            <div class="quote">
+              <span class="quote-key">“</span>
+              <div class="quote-text-container">
+                <p class="quote-text">
+                  AMP does all of the paperwork behind the scenes for co-op
+                  reimbursement.
+                </p>
+                <span class="line"></span>
+                <p class="quote-author">Cove Equipment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
